@@ -1,0 +1,20 @@
+{% extends "interest/layout.html" %}
+{% load static %}
+
+
+
+{% block calender %}
+
+<div class="container">
+
+
+<h1>This is the calender page</h1>
+
+<h4>{{ current_time }}<h4>
+
+{{ cal|safe }}
+
+</div>
+
+
+{% endblock %}

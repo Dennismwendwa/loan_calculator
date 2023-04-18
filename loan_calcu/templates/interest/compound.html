@@ -1,0 +1,76 @@
+{% extends "interest/layout.html" %}
+{% load static %}
+
+{% block compound %}
+
+<div class="container">
+
+<!-- Default form contact -->
+<form action= "" method= "post">
+  {% csrf_token %}
+
+   <div class="col-sm-10 detail">
+   <h5 class="sub_titles"> Step 1. Princiaple Amount / The Amount to Save.</h3>
+   <p class="section_details">This is the amount of money you want to save.</p>
+   </div>
+
+   <div class="">
+    <div class="col-sm-10">
+<input type="text" class="form-control" id="inputEmail3" name="principle" placeholder="Principle amount">
+</div>
+</div>
+
+<br>
+
+<div class="col-sm-10 detail">
+<h5 class="sub_titles"> Step 2. Interest Rate.</h3>
+<p class="section_details">All Rates Must be in Decimal point. Example: 8% == 0.08</p>
+</div>
+
+
+<div class="">
+<div class="col-sm-10">
+<input type="text" class="form-control" id="inputEmail3" name="interest_rate" placeholder="Interest Rate">
+</div>
+</div>
+
+<br>
+
+<div class="col-sm-10 detail">
+<h5 class="sub_titles"> Step 3. Number of years to save. </h3>
+<p class="section_details">Time Must be in Years. <!--Example: 6 Months = 1/2 years, 7 Month = 7/12 years.--></p>
+</div
+
+<div class="">
+<div class="col-sm-10">
+<input type="text" class="form-control" id="inputEmail3" name="time" placeholder="Time">
+</div>
+</div>
+
+<br>
+
+<div class="col-sm-10 detail">
+<h5 class="sub_titles"> Step 4. Simple interest after {{time}} years. </h3>
+</div>
+
+<br>
+
+<div class="simple_interest">
+
+<h4 class="simple_interest_float">{{ simple_interest }}</h4>
+
+</div>
+
+
+<div class="">
+  <div class="col-sm-10">
+    <button type="submit" class="btn btn-primary">Calculate interest</button>
+  </div>
+</div>
+
+<br>
+<form>
+
+</div>
+
+{% endblock %}

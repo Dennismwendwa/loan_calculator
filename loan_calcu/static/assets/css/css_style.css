@@ -1,0 +1,48 @@
+* {
+	margin: 0px;
+
+}
+.nav_bar_top{
+	
+	text-align: center;
+	/*color: white;
+       	font-size: 30px;*/
+	padding: 0px 20px;
+	background: blue;
+	color: white;
+	height: 100px;
+	list-style: none;
+}
+
+.nav_item {
+	display: inline-block;
+	padding: 40px 50px 0px 50px;
+	justify-content: space-between; /*not working*/
+
+}
+
+.border {
+	/*border-width: 5p;*/
+}
+.form-group {
+	background-color: green;
+}
+
+.sub_titles {
+padding: 5px;
+
+}
+
+.detail {
+	height: 100px;
+	background-color: #8BF5FA;
+}
+
+.now_time_div {
+height: 50px;
+margin-right: 40px;
+}
+
+.now_time {
+float: right;
+}
