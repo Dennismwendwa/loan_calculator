@@ -1,0 +1,3 @@
+#web: gunicorn loan_calcu.wsgi
+
+web: gunicorn 'loan_calcu.wsgi'
