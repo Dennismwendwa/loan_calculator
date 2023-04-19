@@ -83,8 +83,7 @@ DATABASES = {
         'NAME': 'techword', #database
         'USER': 'postgres',
         'PASSWORD': 'dennis@5084',
-        'HOST': 'containers-us-west-90.railway.app',
-        'PORT': '5612',
+        'HOST': '0.0.0.0',
     }
 }
 
